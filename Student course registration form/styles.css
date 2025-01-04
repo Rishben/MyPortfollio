@@ -1,0 +1,95 @@
+/* CSS for styling the form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Ensures the form starts at the top if the height is too small */
+    height: 100vh;
+    box-sizing: border-box; /* Ensures padding and borders are included in width/height */
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Ensures the form doesn't get too wide */
+    text-align: left;
+    overflow-y: auto; /* Adds vertical scroll if the form exceeds the screen height */
+    max-height: 90vh; /* Restricts the form's height to 90% of the viewport height */
+}
+
+label, h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding for better readability */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box; /* Ensures padding is part of the width */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: #0098d8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #007bbd;
+}
+
+/* Ensure the form fits well on smaller screens */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    select,
+    textarea {
+        font-size: 12px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+
+

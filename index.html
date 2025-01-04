@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <title>P Nikhil's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div>
+        <div class="header-container">
+            <div class="header-left">
+                <img src="1724255622727.jpeg" alt="Profile Image" class="profile-img">
+                <h1>P Nikhil</h1>
+            </div>
+            <p class="tagline">Web Developer | Designer | Programmer</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <h2>About Nikhil</h2>
+        <p>Hi, I'm P Nikhil, a passionate web developer with expertise in HTML, CSS, JavaScript, and React. I enjoy solving complex problems and creating seamless, user-friendly web experiences.</p>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in">
+        <h2>My Projects</h2>
+        <div class="project-filters">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('web')">Web Development</button>
+            <button onclick="filterProjects('design')">Graphic Design</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card web">
+                <h3>Registration Form</h3>
+                <p>A responsive website built with HTML, CSS, and JS.</p>
+                <a href="Student course registration form/registration_form.html">View Project</a>
+            </div>
+            <div class="project-card design">
+                <h3>Logo Design</h3>
+                <p>A logo created for a small business.</p>
+                <a href="Fit Track.png">View Project</a>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <h2>Skills</h2>
+        <p id="skills-paragraph">
+            I am proficient in technologies such as HTML, CSS, JavaScript, Node.js, and have a good understanding of graphic design tools like Photoshop and Illustrator.
+        </p>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="subject">Subject: </label>
+            <input type="text" id="subject" name="subject" required placeholder="Subject">
+
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="social-links">
+            <a href="www.linkedin.com/in/p-nikhil-536aa42a1">LinkedIn</a>
+            <a href="https://github.com/Rishben">GitHub</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

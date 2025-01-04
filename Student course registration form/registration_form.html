@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSCE Registration Form</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <form id="courseRegistrationForm">
+        <a href="https://www.dsce.edu.in/"><img src="DSCE_LOGO-24.png" style="width: 600px;"></a> 
+        <br><br>
+        <!-- Program (Branches) Dropdown -->
+        <label for="branches">Program *:</label>
+        <select name="branches" id="branches" required>
+            <option value="">Select your branch</option>
+            <option value="AI_ML">Artificial Intelligence & Machine Learning</option>
+            <option value="Aeronautical">Aeronautical Engineering</option>
+            <option value="Automobile">Automobile Engineering</option>
+            <option value="Biotechnology">Biotechnology</option>
+            <option value="Chemical">Chemical Engineering</option>
+            <option value="Civil">Civil Engineering</option>
+            <option value="CSE">Computer Science and Engineering</option>
+            <option value="CSBS">Computer Science and Business Systems</option>
+            <option value="CSE_Cyber">Computer Science Engineering (Cyber Security)</option>
+            <option value="CSE_DS">Computer Science Engineering (Data Science)</option>
+            <option value="CS_Design">Computer Science and Design</option>
+            <option value="EEE">Electrical & Electronics Engineering</option>
+            <option value="ECE">Electronics & Communication Engineering</option>
+            <option value="ISE">Information Science & Engineering</option>
+            <option value="EIE">Electronics & Instrumentation Engineering</option>
+            <option value="Mechanical">Mechanical Engineering</option>
+        </select>
+        <br>
+
+        <!-- Name Input -->
+        <label for="name">Name of the Candidate *:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br>
+
+        <!-- USN Input -->
+        <label for="usn">USN *:</label>
+        <input type="text" id="usn" name="usn" placeholder="Enter your USN" required>
+        <br>
+
+        <!-- Semester Input -->
+        <label for="semester">Semester *:</label>
+        <input type="number" id="semester" name="semester" min="1" max="8" placeholder="Enter your semester" required>
+        <br>
+
+        <!-- Contact Number Input -->
+        <label for="contact">Contact No. *:</label>
+        <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" pattern="[0-9]{10}" required>
+        <br>
+
+        <!-- Email Input -->
+        <label for="email">E-mail Id *:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+
+        <!-- Address Input -->
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" placeholder="Enter your address" rows="3"></textarea>
+        <br>
+
+        <!-- Courses Section -->
+        <h3>Courses</h3>
+
+        <!-- Fixed Course Subject (Displayed as List) -->
+        <div id="fixedCourses">
+            <label>Fixed Course Subjects:</label>
+            <ul id="fixedCourseList">
+                <!-- Fixed courses will be displayed here dynamically -->
+            </ul>
+            <br>
+        </div>
+
+        <!-- Elective Course Subject -->
+        <div id="electiveCourses">
+            <label for="electiveCourse">Elective Course Subjects:</label>
+            <select id="electiveCourse" name="electiveCourse" required>
+                <!-- Options will be populated dynamically based on branch and semester -->
+            </select>
+            <br>
+        </div>
+
+        <label for="signature">Upload Signature (JPEG or JPG):</label>
+        <input type="file" id="signature" name="signature" accept=".jpg, .jpeg" required>
+        <br><br>
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
